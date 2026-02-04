@@ -1,0 +1,11 @@
+# Robots.txt for Straight Up Finance
+# https://straightup-finance.com.au
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://straightup-finance.com.au/sitemap.xml
+
+# Crawl-delay for polite crawling
+Crawl-delay: 1
