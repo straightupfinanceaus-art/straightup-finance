@@ -1,4 +1,0 @@
-# Force HTTPS and redirect www to non-www
-http://www.straightup-finance.com.au/* https://straightup-finance.com.au/:splat 301!
-https://www.straightup-finance.com.au/* https://straightup-finance.com.au/:splat 301!
-http://straightup-finance.com.au/* https://straightup-finance.com.au/:splat 301!
