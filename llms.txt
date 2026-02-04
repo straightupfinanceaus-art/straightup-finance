@@ -1,0 +1,27 @@
+# Straight Up Finance
+> Australia's straight-up finance broker for cars, motorbikes, and boats.
+
+## About
+Straight Up Finance is an Australian finance broker offering car, motorbike, and boat loans. We charge the same fees for everyone regardless of credit history. Fast approvals, no BS.
+
+## Services
+- Car Finance (new, used, private sale)
+- Motorbike Finance (sports, cruisers, dirt bikes)
+- Boat Finance (tinnies, runabouts, cruisers)
+
+## Key Features
+- Same fee structure for all customers
+- No rate markup
+- Fast 24-48 hour approvals
+- Australia wide service
+
+## Contact
+- Website: https://straightup-finance.com.au
+- Email: straightupfinanceaus@gmail.com
+- Hours: Mon-Fri 8am-6pm AWST
+
+## Links
+- Apply Online: https://straightup-finance.com.au/#apply
+- Calculator: https://straightup-finance.com.au/#calculators
+- Blog: https://straightup-finance.com.au/blog/
+- Locations: https://straightup-finance.com.au/locations/
