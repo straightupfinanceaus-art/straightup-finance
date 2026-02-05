@@ -1,6 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="4" fill="#1A1A2E"/>
-  <text x="3" y="23" font-family="Arial Black, Arial, sans-serif" font-size="16" font-weight="900" fill="#FFFFFF">S</text>
-  <text x="11" y="23" font-family="Arial Black, Arial, sans-serif" font-size="16" font-weight="900" fill="#FF4D00">U</text>
-  <text x="21" y="23" font-family="Arial Black, Arial, sans-serif" font-size="16" font-weight="900" fill="#FFFFFF">F</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <rect width="100" height="100" rx="20" fill="#1A1A2E"/>
+  <text x="50" y="68" font-family="Arial Black, sans-serif" font-size="50" font-weight="bold" text-anchor="middle" fill="#FFFFFF">S</text>
+  <text x="50" y="68" font-family="Arial Black, sans-serif" font-size="50" font-weight="bold" text-anchor="middle" fill="#FF4D00" opacity="0.8" transform="translate(2,2)">U</text>
 </svg>
