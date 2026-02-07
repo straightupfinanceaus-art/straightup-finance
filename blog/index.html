@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Straight Up Finance</title>
+  <meta name="description" content="Finance tips, guides, and advice from Straight Up Finance. Learn about car loans, motorbike finance, boat loans, and more.">
+  <link rel="canonical" href="https://straightup-finance.com.au/blog/">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FX04D8M0WS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-FX04D8M0WS');
+  </script>
+  
+  <style>
+    :root {
+      --primary: #FF4D00;
+      --primary-dark: #E04400;
+      --secondary: #1A1A2E;
+      --white: #FFFFFF;
+      --light-gray: #F5F5F7;
+      --text: #1A1A2E;
+      --text-light: #6B6B7B;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Barlow', sans-serif; background: var(--white); color: var(--text); line-height: 1.7; }
+    h1, h2, h3, h4 { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.02em; line-height: 1.2; }
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    
+    .nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: var(--secondary); padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; color: var(--white); text-decoration: none; }
+    .logo-accent { color: var(--primary); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { color: var(--white); text-decoration: none; font-weight: 500; font-size: 0.95rem; text-transform: uppercase; }
+    .nav-links a:hover { color: var(--primary); }
+    .nav-cta { background: var(--primary); padding: 0.8rem 1.5rem; border-radius: 4px; }
+    .mobile-menu-btn { display: none; background: none; border: none; color: var(--white); font-size: 1.5rem; cursor: pointer; }
+    
+    .page-header { background: var(--secondary); padding: 120px 2rem 3rem; text-align: center; }
+    .page-header h1 { font-size: clamp(2.5rem, 5vw, 4rem); color: var(--white); margin-bottom: 1rem; }
+    .page-header h1 span { color: var(--primary); }
+    .page-header p { color: rgba(255,255,255,0.8); font-size: 1.2rem; max-width: 600px; margin: 0 auto; }
+    
+    .blog-grid-section { padding: 4rem 2rem; }
+    .blog-grid-container { max-width: 1100px; margin: 0 auto; }
+    .blog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 2rem; }
+    
+    .blog-card { background: var(--light-gray); border-radius: 12px; padding: 2rem; transition: transform 0.2s, box-shadow 0.2s; text-decoration: none; display: block; }
+    .blog-card:hover { transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,0,0,0.1); text-decoration: none; }
+    .blog-card-category { color: var(--primary); font-size: 0.85rem; font-weight: 600; text-transform: uppercase; margin-bottom: 0.75rem; }
+    .blog-card h3 { font-size: 1.4rem; color: var(--secondary); margin-bottom: 0.75rem; font-family: 'Barlow', sans-serif; font-weight: 700; }
+    .blog-card p { color: var(--text-light); font-size: 1rem; margin-bottom: 1rem; }
+    .blog-card-meta { color: var(--text-light); font-size: 0.85rem; }
+    
+    .footer { background: #0F0F1A; color: rgba(255,255,255,0.7); padding: 3rem 2rem 1.5rem; }
+    .footer-content { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; }
+    .footer h4 { color: var(--white); margin-bottom: 1rem; font-family: 'Barlow', sans-serif; }
+    .footer ul { list-style: none; }
+    .footer li { margin-bottom: 0.5rem; }
+    .footer a { color: rgba(255,255,255,0.7); font-size: 0.9rem; }
+    .footer a:hover { color: var(--primary); }
+    .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); margin-top: 2rem; padding-top: 1.5rem; text-align: center; font-size: 0.85rem; }
+    
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .mobile-menu-btn { display: block; }
+      .blog-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="/" class="logo">STRAIGHT <span class="logo-accent">UP</span> FINANCE</a>
+    <button class="mobile-menu-btn" aria-label="Menu">☰</button>
+    <ul class="nav-links">
+      <li><a href="/#about">About</a></li>
+      <li><a href="/#cars">Cars</a></li>
+      <li><a href="/#motorbikes">Motorbikes</a></li>
+      <li><a href="/#boats">Boats</a></li>
+      <li><a href="/#calculator">Calculator</a></li>
+      <li><a href="/locations/">Locations</a></li>
+      <li><a href="/blog/">Blog</a></li>
+      <li><a href="/#register" class="nav-cta">Register Interest</a></li>
+    </ul>
+  </nav>
+
+  <header class="page-header">
+    <h1>STRAIGHT UP <span>BLOG</span></h1>
+    <p>Finance tips, guides, and honest advice to help you make better decisions.</p>
+  </header>
+
+  <section class="blog-grid-section">
+    <div class="blog-grid-container">
+      <div class="blog-grid">
+        <a href="/blog/buying-car-darwin-finance-tips.html" class="blog-card">
+          <div class="blog-card-category">Car Finance</div>
+          <h3>Buying a Car in Darwin: Finance Tips</h3>
+          <p>Buying a car in Darwin or the NT? Here's what you need to know about car finance in the Top End.</p>
+          <div class="blog-card-meta">January 8, 2026 · 4 min read</div>
+        </a>
+        <a href="/blog/motorbike-finance-road-vs-dirt.html" class="blog-card">
+          <div class="blog-card-category">Motorbike Finance</div>
+          <h3>Motorbike Finance: Road Bikes vs Dirt Bikes</h3>
+          <p>Financing a motorbike? Here's how finance works differently for road bikes, dirt bikes, and off-road machines.</p>
+          <div class="blog-card-meta">January 6, 2026 · 4 min read</div>
+        </a>
+        <a href="/blog/boat-finance-first-time-buyers.html" class="blog-card">
+          <div class="blog-card-category">Boat Finance</div>
+          <h3>Boat Finance for First-Time Buyers</h3>
+          <p>Buying your first boat? Here's everything you need to know about boat finance, from rates to what lenders look for.</p>
+          <div class="blog-card-meta">January 4, 2026 · 5 min read</div>
+        </a>
+        <a href="/blog/how-much-can-i-borrow-car-loan.html" class="blog-card">
+          <div class="blog-card-category">Car Finance</div>
+          <h3>How Much Can I Borrow for a Car Loan?</h3>
+          <p>Wondering how much you can borrow for a car? Learn what affects your borrowing capacity and how lenders calculate it.</p>
+          <div class="blog-card-meta">January 30, 2026 · 5 min read</div>
+        </a>
+        <a href="/blog/car-loan-term-length-comparison.html" class="blog-card">
+          <div class="blog-card-category">Car Finance</div>
+          <h3>Car Loan Terms: 3, 5, or 7 Years?</h3>
+          <p>Should you choose a shorter or longer car loan term? We compare the pros and cons of different loan lengths.</p>
+          <div class="blog-card-meta">January 28, 2026 · 5 min read</div>
+        </a>
+        <a href="/blog/new-car-vs-used-car-finance-comparison.html" class="blog-card">
+          <div class="blog-card-category">Car Finance</div>
+          <h3>New Car vs Used Car Finance: What's the Difference?</h3>
+          <p>Financing a new car vs a used car — what's different? We compare rates, terms, and what to watch out for.</p>
+          <div class="blog-card-meta">January 26, 2026 · 5 min read</div>
+        </a>
+        <a href="/blog/buying-car-private-seller-finance.html" class="blog-card">
+          <div class="blog-card-category">Car Finance</div>
+          <h3>Can I Finance a Car from a Private Seller?</h3>
+          <p>Buying a car from a private seller? Yes, you can still get finance. Here's how it works and what to watch out for.</p>
+          <div class="blog-card-meta">January 24, 2026 · 5 min read</div>
+        </a>
+        <a href="/blog/secured-vs-unsecured-car-loans.html" class="blog-card">
+          <div class="blog-card-category">Car Finance</div>
+          <h3>Secured vs Unsecured Car Loans Explained</h3>
+          <p>What's the difference between a secured and unsecured car loan? Learn which is better for your situation.</p>
+          <div class="blog-card-meta">January 22, 2026 · 4 min read</div>
+        </a>
+        <a href="/blog/fixed-vs-variable-car-loan-rates.html" class="blog-card">
+          <div class="blog-card-category">Car Finance</div>
+          <h3>Fixed vs Variable Car Loan Rates</h3>
+          <p>Should you choose a fixed or variable rate car loan? We explain the difference and when each makes sense.</p>
+          <div class="blog-card-meta">January 20, 2026 · 4 min read</div>
+        </a>
+        <a href="/blog/best-boats-fishing-wa-finance.html" class="blog-card">
+          <div class="blog-card-category">Boat Finance</div>
+          <h3>Best Boats for Fishing in WA (And How to Finance Them)</h3>
+          <p>Looking for a fishing boat in Western Australia? Here are the best options and how to finance them.</p>
+          <div class="blog-card-meta">January 2, 2026 · 6 min read</div>
+        </a>
+        <a href="/blog/refinancing-car-loan-when-makes-sense.html" class="blog-card">
+          <div class="blog-card-category">Car Finance</div>
+          <h3>Refinancing Your Car Loan: When Does It Make Sense?</h3>
+          <p>Thinking about refinancing your car loan? Learn when it's worth it and when you should stick with your current loan.</p>
+          <div class="blog-card-meta">January 18, 2026 · 5 min read</div>
+        </a>
+        <a href="/blog/why-use-finance-broker-vs-direct.html" class="blog-card">
+          <div class="blog-card-category">General</div>
+          <h3>Why Use a Finance Broker?</h3>
+          <p>What does a finance broker actually do? And why should you use one instead of going direct to a bank?</p>
+          <div class="blog-card-meta">January 16, 2026 · 4 min read</div>
+        </a>
+        <a href="/blog/ute-finance-options-tradies.html" class="blog-card">
+          <div class="blog-card-category">Car Finance</div>
+          <h3>Ute Finance for Tradies: Your Options Explained</h3>
+          <p>Need a ute for work? Here's how tradies can finance a ute, including chattel mortgage and commercial options.</p>
+          <div class="blog-card-meta">January 14, 2026 · 5 min read</div>
+        </a>
+        <a href="/blog/4wd-finance-what-you-need-to-know.html" class="blog-card">
+          <div class="blog-card-category">Car Finance</div>
+          <h3>4WD Finance: What You Need to Know</h3>
+          <p>Financing a 4WD or off-road vehicle? Here's what you need to know about rates, terms, and getting approved.</p>
+          <div class="blog-card-meta">January 12, 2026 · 5 min read</div>
+        </a>
+        <a href="/blog/fifo-workers-car-boat-finance-tips.html" class="blog-card">
+          <div class="blog-card-category">General</div>
+          <h3>Finance Tips for FIFO Workers</h3>
+          <p>FIFO worker looking for car or boat finance? Here's what lenders look for and how to improve your chances.</p>
+          <div class="blog-card-meta">January 10, 2026 · 5 min read</div>
+        </a>
+        <a href="/blog/balloon-payments-explained.html" class="blog-card">
+          <div class="blog-card-category">Car Finance</div>
+          <h3>Balloon Payments Explained</h3>
+          <p>What is a balloon payment? Learn how they work, when they make sense, and whether one is right for your car loan.</p>
+          <div class="blog-card-meta">February 4, 2026 · 5 min read</div>
+        </a>
+        <a href="/blog/car-finance-self-employed.html" class="blog-card">
+          <div class="blog-card-category">Car Finance</div>
+          <h3>Can I Get Car Finance if I'm Self-Employed?</h3>
+          <p>Self-employed and need car finance? Learn what lenders look for, what documents you'll need, and how to improve your chances of approval.</p>
+          <div class="blog-card-meta">February 4, 2026 · 5 min read</div>
+        </a>
+        <a href="/blog/broker-vs-bank-vs-dealer-finance.html" class="blog-card">
+          <div class="blog-card-category">Car Finance</div>
+          <h3>Broker vs Bank vs Dealer Finance</h3>
+          <p>Should you use a finance broker, go direct to a bank, or take dealer finance? We break down the pros and cons of each option.</p>
+          <div class="blog-card-meta">February 3, 2026 · 6 min read</div>
+        </a>
+        <a href="/blog/what-interest-rate-car-loan-2026.html" class="blog-card">
+          <div class="blog-card-category">Car Finance</div>
+          <h3>What Interest Rate Can I Get on a Car Loan in 2026?</h3>
+          <p>Car loan interest rates in 2026 explained. What affects your rate, what's a good rate, and how to get the best deal.</p>
+          <div class="blog-card-meta">February 2, 2026 · 6 min read</div>
+        </a>
+        <a href="/blog/first-car-loan-what-you-need-to-know.html" class="blog-card">
+          <div class="blog-card-category">Car Finance</div>
+          <h3>Your First Car Loan: What You Need to Know</h3>
+          <p>Getting your first car loan? Here's everything you need to know about applying, what lenders look for, and how to get approved.</p>
+          <div class="blog-card-meta">February 1, 2026 · 6 min read</div>
+        </a></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <a href="/" class="logo">STRAIGHT <span class="logo-accent">UP</span> FINANCE</a>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">No BS. Just straight up finance.</p>
+      </div>
+      <div>
+        <h4>Loans</h4>
+        <ul>
+          <li><a href="/#cars">Car Finance</a></li>
+          <li><a href="/#motorbikes">Motorbike Finance</a></li>
+          <li><a href="/#boats">Boat Finance</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="/locations/">Locations</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/#calculator">Calculator</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="/#about">About Us</a></li>
+          <li><a href="/#contact">Contact</a></li>
+          <li><a href="/#register">Register Interest</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Straight Up Finance. All rights reserved. Straight Up Finance is an information and lead generation service. We are not a licensed credit provider. All finance is arranged through licensed third-party credit representatives.</p>
+    </div>
+  </footer>
+</body>
+</html>
